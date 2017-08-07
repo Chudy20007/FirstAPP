@@ -30,8 +30,8 @@ namespace App
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,6 +64,7 @@ namespace App
             this.LoggedUserLabel = new System.Windows.Forms.Label();
             this.DatabaseNameLabel2 = new System.Windows.Forms.Label();
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.DataTabs = new System.Windows.Forms.TabControl();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -168,27 +169,27 @@ namespace App
             this.treeViewToolStripMenuItem,
             this.cardToolStripMenuItem});
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.usersToolStripMenuItem.Text = "Users";
             // 
             // tableToolStripMenuItem
             // 
             this.tableToolStripMenuItem.Name = "tableToolStripMenuItem";
-            this.tableToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tableToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.tableToolStripMenuItem.Text = "Table";
             this.tableToolStripMenuItem.Click += new System.EventHandler(this.tableToolStripMenuItem_Click);
             // 
             // treeViewToolStripMenuItem
             // 
             this.treeViewToolStripMenuItem.Name = "treeViewToolStripMenuItem";
-            this.treeViewToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.treeViewToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.treeViewToolStripMenuItem.Text = "TreeView";
             this.treeViewToolStripMenuItem.Click += new System.EventHandler(this.treeViewToolStripMenuItem_Click);
             // 
             // cardToolStripMenuItem
             // 
             this.cardToolStripMenuItem.Name = "cardToolStripMenuItem";
-            this.cardToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cardToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.cardToolStripMenuItem.Text = "Card";
             // 
             // employeesToolStripMenuItem
@@ -198,7 +199,7 @@ namespace App
             this.treeViewToolStripMenuItem1,
             this.cardToolStripMenuItem1});
             this.employeesToolStripMenuItem.Name = "employeesToolStripMenuItem";
-            this.employeesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.employeesToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.employeesToolStripMenuItem.Text = "Employees";
             // 
             // tableToolStripMenuItem1
@@ -228,27 +229,27 @@ namespace App
             this.treeViewToolStripMenuItem2,
             this.cardToolStripMenuItem2});
             this.bonusesToolStripMenuItem.Name = "bonusesToolStripMenuItem";
-            this.bonusesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.bonusesToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.bonusesToolStripMenuItem.Text = "Bonuses";
             // 
             // tableToolStripMenuItem2
             // 
             this.tableToolStripMenuItem2.Name = "tableToolStripMenuItem2";
-            this.tableToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.tableToolStripMenuItem2.Size = new System.Drawing.Size(121, 22);
             this.tableToolStripMenuItem2.Text = "Table";
             this.tableToolStripMenuItem2.Click += new System.EventHandler(this.tableToolStripMenuItem2_Click);
             // 
             // treeViewToolStripMenuItem2
             // 
             this.treeViewToolStripMenuItem2.Name = "treeViewToolStripMenuItem2";
-            this.treeViewToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.treeViewToolStripMenuItem2.Size = new System.Drawing.Size(121, 22);
             this.treeViewToolStripMenuItem2.Text = "TreeView";
             this.treeViewToolStripMenuItem2.Click += new System.EventHandler(this.treeViewToolStripMenuItem2_Click);
             // 
             // cardToolStripMenuItem2
             // 
             this.cardToolStripMenuItem2.Name = "cardToolStripMenuItem2";
-            this.cardToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.cardToolStripMenuItem2.Size = new System.Drawing.Size(121, 22);
             this.cardToolStripMenuItem2.Text = "Card";
             // 
             // positionsToolStripMenuItem
@@ -258,7 +259,7 @@ namespace App
             this.treeViewToolStripMenuItem3,
             this.cardToolStripMenuItem3});
             this.positionsToolStripMenuItem.Name = "positionsToolStripMenuItem";
-            this.positionsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.positionsToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.positionsToolStripMenuItem.Text = "Positions";
             // 
             // tableToolStripMenuItem3
@@ -271,7 +272,7 @@ namespace App
             // treeViewToolStripMenuItem3
             // 
             this.treeViewToolStripMenuItem3.Name = "treeViewToolStripMenuItem3";
-            this.treeViewToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.treeViewToolStripMenuItem3.Size = new System.Drawing.Size(121, 22);
             this.treeViewToolStripMenuItem3.Text = "TreeView";
             this.treeViewToolStripMenuItem3.Click += new System.EventHandler(this.treeViewToolStripMenuItem3_Click);
             // 
@@ -287,23 +288,23 @@ namespace App
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.Location = new System.Drawing.Point(13, 53);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(0, 0);
@@ -342,6 +343,21 @@ namespace App
             this.treeView1.TabIndex = 4;
             this.treeView1.Visible = false;
             // 
+            // DataTabs
+            // 
+            this.DataTabs.HotTrack = true;
+            this.DataTabs.Location = new System.Drawing.Point(0, 27);
+            this.DataTabs.Margin = new System.Windows.Forms.Padding(4);
+            this.DataTabs.MaximumSize = new System.Drawing.Size(1900, 1000);
+            this.DataTabs.MinimumSize = new System.Drawing.Size(1000, 700);
+            this.DataTabs.Name = "DataTabs";
+            this.DataTabs.SelectedIndex = 0;
+            this.DataTabs.Size = new System.Drawing.Size(1000, 700);
+            this.DataTabs.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
+            this.DataTabs.TabIndex = 5;
+            this.DataTabs.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.DataTabs_Selecting);
+            this.DataTabs.MouseClick += new System.Windows.Forms.MouseEventHandler(this.DataTabs_MouseClick);
+            // 
             // DatabaseNameLabel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -350,6 +366,7 @@ namespace App
             this.BackgroundImage = global::App.Properties.Resources.bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(331, 301);
+            this.Controls.Add(this.DataTabs);
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.DatabaseNameLabel2);
             this.Controls.Add(this.LoggedUserLabel);
@@ -403,5 +420,6 @@ namespace App
         private System.Windows.Forms.Label LoggedUserLabel;
         private System.Windows.Forms.Label DatabaseNameLabel2;
         private TreeView treeView1;
+        private TabControl DataTabs;
     }
 }

@@ -137,6 +137,7 @@ namespace App
 
         public static void LogIn(string login, string password, string DatabaseName, string IntegratedSecurityValue)
         {
+
             var DBContext = getDBConnection(DatabaseName, IntegratedSecurityValue);
             DBContext.Connection.Open();
             var UserTable=DBContext.UsersTable.ToList();
@@ -147,6 +148,8 @@ namespace App
                     {
                         MessageBox.Show("User are exists!");
                         DatabaseNameLabel UserPanel = new DatabaseNameLabel(login, DatabaseName);
+                        Form LoginForm = Application.OpenForms["LoginForm"];
+                        LoginForm.Visible = false;
                         UserPanel.Show();
                         break;
                     }
@@ -158,6 +161,8 @@ namespace App
                         {
                             MessageBox.Show("User are exists!");
                             DatabaseNameLabel UserPanel = new DatabaseNameLabel(login,DatabaseName);
+                            Form LoginForm = Application.OpenForms["LoginForm"];
+                            LoginForm.Visible = false;
                             UserPanel.Show();
                            
                             
@@ -288,7 +293,7 @@ namespace App
          
         }
 
-        public static TreeView GetDataToTreeView(TreeView SelectedTreeView, string SelectedTable,string DatabaseName)
+        public static TreeView GetDataToTreeView(TreeView SelectedTreeView, string SelectedTable,string DatabaseName, TabControl DataTabs)
         {
             var DatabaseConnection = DatabaseMethods.getDBConnection(DatabaseName, "False");
             List<TreeNode> NewTreeNode = DatabaseMethods.GetDataToTreeNode(SelectedTable, DatabaseConnection);
@@ -296,8 +301,17 @@ namespace App
             SelectedTreeView.Visible = true;
             SelectedTreeView.Height = 300;
             SelectedTreeView.Width = 500;
+           
             return SelectedTreeView;
         }
+
+        public static TabPage CreateNewTabPage (string TabPageName)
+        {
+             
+            return  new TabPage(TabPageName); 
+        }
+            
+        
 
         public static List<TreeNode> GetDataToTreeNode(string SelectedTable,DatabaseContext DatabaseConnection)
         {
@@ -330,6 +344,7 @@ namespace App
                             NewTreeNode.Add(Node);
 
                         }
+                      
                         break;
 
                     }
@@ -390,6 +405,8 @@ namespace App
             }
             return NewTreeNode;
         }
+
+       
 
     }
 }
